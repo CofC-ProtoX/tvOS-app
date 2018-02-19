@@ -8,20 +8,32 @@
 
 /* Begin PBXBuildFile section */
 		AD9DF2EE20361F250040A7FD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9DF2ED20361F250040A7FD /* AppDelegate.swift */; };
-		AD9DF2F020361F250040A7FD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9DF2EF20361F250040A7FD /* ViewController.swift */; };
+		AD9DF2F020361F250040A7FD /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9DF2EF20361F250040A7FD /* MainViewController.swift */; };
 		AD9DF2F320361F250040A7FD /* tvOS_app.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AD9DF2F120361F250040A7FD /* tvOS_app.xcdatamodeld */; };
 		AD9DF2F620361F250040A7FD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD9DF2F420361F250040A7FD /* Main.storyboard */; };
 		AD9DF2F820361F250040A7FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD9DF2F720361F250040A7FD /* Assets.xcassets */; };
+		ADB5691F203B2BB400E0FB4B /* VideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB5691E203B2BB400E0FB4B /* VideoViewController.swift */; };
+		ADBEA19320368BCE00E93E6C /* StandardButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBEA19220368BCE00E93E6C /* StandardButton.swift */; };
+		ADBEA19520371F9C00E93E6C /* Mentor.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBEA19420371F9C00E93E6C /* Mentor.swift */; };
+		ADBEA197203722CF00E93E6C /* LoopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBEA196203722CF00E93E6C /* LoopViewController.swift */; };
+		ADBEA1992037232900E93E6C /* WeekView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBEA1982037232900E93E6C /* WeekView.swift */; };
+		ADBEA19B2037234E00E93E6C /* DayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBEA19A2037234E00E93E6C /* DayView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		AD9DF2EA20361F250040A7FD /* tvOS-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "tvOS-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD9DF2ED20361F250040A7FD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		AD9DF2EF20361F250040A7FD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AD9DF2EF20361F250040A7FD /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		AD9DF2F220361F250040A7FD /* tvOS_app.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = tvOS_app.xcdatamodel; sourceTree = "<group>"; };
 		AD9DF2F520361F250040A7FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AD9DF2F720361F250040A7FD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AD9DF2F920361F250040A7FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ADB5691E203B2BB400E0FB4B /* VideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoViewController.swift; sourceTree = "<group>"; };
+		ADBEA19220368BCE00E93E6C /* StandardButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandardButton.swift; sourceTree = "<group>"; };
+		ADBEA19420371F9C00E93E6C /* Mentor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mentor.swift; sourceTree = "<group>"; };
+		ADBEA196203722CF00E93E6C /* LoopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoopViewController.swift; sourceTree = "<group>"; };
+		ADBEA1982037232900E93E6C /* WeekView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekView.swift; sourceTree = "<group>"; };
+		ADBEA19A2037234E00E93E6C /* DayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,13 +67,35 @@
 			isa = PBXGroup;
 			children = (
 				AD9DF2ED20361F250040A7FD /* AppDelegate.swift */,
-				AD9DF2EF20361F250040A7FD /* ViewController.swift */,
+				AD9DF2EF20361F250040A7FD /* MainViewController.swift */,
+				ADB56920203B2BC300E0FB4B /* LoopViewController */,
+				ADB56921203B2BCE00E0FB4B /* VideoViewController */,
+				ADBEA19420371F9C00E93E6C /* Mentor.swift */,
+				ADBEA19220368BCE00E93E6C /* StandardButton.swift */,
 				AD9DF2F420361F250040A7FD /* Main.storyboard */,
 				AD9DF2F720361F250040A7FD /* Assets.xcassets */,
 				AD9DF2F920361F250040A7FD /* Info.plist */,
 				AD9DF2F120361F250040A7FD /* tvOS_app.xcdatamodeld */,
 			);
 			path = "tvOS-app";
+			sourceTree = "<group>";
+		};
+		ADB56920203B2BC300E0FB4B /* LoopViewController */ = {
+			isa = PBXGroup;
+			children = (
+				ADBEA196203722CF00E93E6C /* LoopViewController.swift */,
+				ADBEA1982037232900E93E6C /* WeekView.swift */,
+				ADBEA19A2037234E00E93E6C /* DayView.swift */,
+			);
+			path = LoopViewController;
+			sourceTree = "<group>";
+		};
+		ADB56921203B2BCE00E0FB4B /* VideoViewController */ = {
+			isa = PBXGroup;
+			children = (
+				ADB5691E203B2BB400E0FB4B /* VideoViewController.swift */,
+			);
+			path = VideoViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,9 +169,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AD9DF2F020361F250040A7FD /* ViewController.swift in Sources */,
+				ADBEA197203722CF00E93E6C /* LoopViewController.swift in Sources */,
+				ADBEA19B2037234E00E93E6C /* DayView.swift in Sources */,
+				ADB5691F203B2BB400E0FB4B /* VideoViewController.swift in Sources */,
+				AD9DF2F020361F250040A7FD /* MainViewController.swift in Sources */,
 				AD9DF2EE20361F250040A7FD /* AppDelegate.swift in Sources */,
+				ADBEA1992037232900E93E6C /* WeekView.swift in Sources */,
 				AD9DF2F320361F250040A7FD /* tvOS_app.xcdatamodeld in Sources */,
+				ADBEA19520371F9C00E93E6C /* Mentor.swift in Sources */,
+				ADBEA19320368BCE00E93E6C /* StandardButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
