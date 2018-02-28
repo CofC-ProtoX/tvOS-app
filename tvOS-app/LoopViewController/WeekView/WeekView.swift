@@ -14,12 +14,12 @@ class WeekView: UIView {
     var dayViews: [DayView] = []
 
     override init(frame: CGRect) {
-        super.init(frame: frame)
+        super.init(frame: frame.insetBy(dx: 50, dy: 50))
         buildDisplay()
     }
     
     func buildDisplay() {
-        let inset: CGFloat = 5.0
+        let inset: CGFloat = 7.5
         let height = frame.height / 2
         let width = (frame.width / CGFloat(days.count))
         for i in 0..<days.count {
