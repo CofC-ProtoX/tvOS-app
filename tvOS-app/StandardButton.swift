@@ -10,10 +10,15 @@ import UIKit
 
 class StandardButton: UIButton {
     
-        let gradientLayer = CAGradientLayer()
+    let gradientLayer = CAGradientLayer()
+    
+    
     
     override func awakeFromNib() {
-        
+        format()
+    }
+    
+    func format() {
         self.titleLabel?.textColor = UIColor.white
         self.titleLabel?.shadowColor = UIColor.black
         self.titleLabel?.shadowOffset = CGSize(width: 0, height: 0)

@@ -8,13 +8,13 @@
 
 import UIKit
 
-class WeekView: UIView {
+class WeekView: SlideView {
     
     let days: [String] = ["Monday","Tuesday","Wednesday","Thursday","Friday"]
     var dayViews: [DayView] = []
 
-    override init(frame: CGRect) {
-        super.init(frame: frame.insetBy(dx: 50, dy: 50))
+    init(frame: CGRect) {
+        super.init(frame: frame.insetBy(dx: 50, dy: 50), title: "Weekly Hours")
         buildDisplay()
     }
     
