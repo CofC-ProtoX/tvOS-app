@@ -13,8 +13,7 @@ class MainViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let menuFrame = CGRect(x: 0, y: 0, width: view.frame.width / 4, height: view.frame.height).insetBy(dx: 30, dy: 30)
-        view.addSubview(VerticalMenuView(frame: menuFrame))
+        view.addSubview(VerticalMenuView(frame: CGRect(x: 0, y: 0, width: view.frame.width / 4, height: view.frame.height), inset: 30))
     }
 
     override func didReceiveMemoryWarning() {
