@@ -10,32 +10,41 @@ import UIKit
 
 class StandardButton: UIButton {
     
-    let gradientLayer = CAGradientLayer()
+    var gradientLayer: StandardGradientLayer!
+    var radius: CGFloat!
     
-    
-    
-    override func awakeFromNib() {
-        format()
+    init(frame: CGRect, title: String) {
+        super.init(frame: frame)
+        self.radius = self.frame.height / 8
+        gradientLayer = StandardGradientLayer(frame: self.bounds)
+        gradientLayer.cornerRadius = self.radius
+        self.layer.addSublayer(gradientLayer)
+        self.tintColor = UIColor.black.withAlphaComponent(0.03)
+        self.layer.cornerRadius = self.radius
+        self.addTitleLabel(with: title)
     }
     
-    func format() {
+//    override func awakeFromNib() {
+//        self.layer.addSublayer(StandardGradientLayer(frame: self.bounds))
+//        self.tintColor = UIColor.black.withAlphaComponent(0.03)
+//        self.layer.cornerRadius = self.frame.height / 8
+//        self.titleLabel?.frame = self.bounds
+//        self.titleLabel?.text = ""
+//        self.titleLabel?.textColor = UIColor.white
+//        self.titleLabel?.shadowColor = UIColor.black
+//        self.titleLabel?.shadowOffset = CGSize(width: 0, height: 0)
+//    }
+    
+    func addTitleLabel(with title: String) {
+        self.titleLabel?.frame = self.bounds
+        self.titleLabel?.text = title
         self.titleLabel?.textColor = UIColor.white
         self.titleLabel?.shadowColor = UIColor.black
         self.titleLabel?.shadowOffset = CGSize(width: 0, height: 0)
-        
-        let color1 = UIColor(red: 255/255, green: 206/255, blue: 85/255, alpha: 1.0).cgColor
-        let color2 = UIColor(red: 210/255, green: 152/255, blue: 12/255, alpha: 1.0).cgColor
-        
-        gradientLayer.frame = self.bounds
-        gradientLayer.colors = [color1, color2]
-        gradientLayer.locations = [0.0, 1.0]
-        
-        self.layer.addSublayer(gradientLayer)
-        self.layer.cornerRadius = self.frame.height / 8
-        
-        self.tintColor = UIColor.black.withAlphaComponent(0.03)
-        
         self.addSubview(titleLabel!)
     }
-
+    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
 }
