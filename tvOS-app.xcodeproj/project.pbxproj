@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AD08A69720502E7C0058BB5B /* VerticalMenuContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD08A69620502E7C0058BB5B /* VerticalMenuContainerView.swift */; };
+		AD08A69920502FB20058BB5B /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD08A69820502FB20058BB5B /* Extensions.swift */; };
 		AD379662203DCF96002A4C3B /* DayTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD379661203DCF96002A4C3B /* DayTitleView.swift */; };
 		AD379665203DFB7F002A4C3B /* SlideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD379664203DFB7F002A4C3B /* SlideView.swift */; };
 		AD7ED5A8203C937E00DD2972 /* CustomFocusableViewType.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD7ED5A4203C937E00DD2972 /* CustomFocusableViewType.swift */; };
@@ -30,6 +32,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AD08A69620502E7C0058BB5B /* VerticalMenuContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerticalMenuContainerView.swift; sourceTree = "<group>"; };
+		AD08A69820502FB20058BB5B /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		AD379661203DCF96002A4C3B /* DayTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayTitleView.swift; sourceTree = "<group>"; };
 		AD379664203DFB7F002A4C3B /* SlideView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideView.swift; sourceTree = "<group>"; };
 		AD7ED5A4203C937E00DD2972 /* CustomFocusableViewType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomFocusableViewType.swift; sourceTree = "<group>"; };
@@ -125,6 +129,8 @@
 				AD9DF2ED20361F250040A7FD /* AppDelegate.swift */,
 				AD9DF2EF20361F250040A7FD /* MainViewController.swift */,
 				ADB6A8D620476F8100620682 /* VerticalMenuView.swift */,
+				AD08A69620502E7C0058BB5B /* VerticalMenuContainerView.swift */,
+				AD08A69820502FB20058BB5B /* Extensions.swift */,
 				ADB56920203B2BC300E0FB4B /* LoopViewController */,
 				ADB56921203B2BCE00E0FB4B /* VideoViewController */,
 				AD379667203E2D6D002A4C3B /* Extras */,
@@ -236,12 +242,14 @@
 				AD7ED5AB203C937E00DD2972 /* ParallaxStyle.swift in Sources */,
 				ADB6A8D720476F8100620682 /* VerticalMenuView.swift in Sources */,
 				AD9DF2F020361F250040A7FD /* MainViewController.swift in Sources */,
+				AD08A69720502E7C0058BB5B /* VerticalMenuContainerView.swift in Sources */,
 				AD379665203DFB7F002A4C3B /* SlideView.swift in Sources */,
 				AD7ED5A9203C937E00DD2972 /* CustomFocusableButton.swift in Sources */,
 				AD9DF2EE20361F250040A7FD /* AppDelegate.swift in Sources */,
 				ADBEA1992037232900E93E6C /* WeekView.swift in Sources */,
 				AD9DF2F320361F250040A7FD /* tvOS_app.xcdatamodeld in Sources */,
 				AD7ED5A8203C937E00DD2972 /* CustomFocusableViewType.swift in Sources */,
+				AD08A69920502FB20058BB5B /* Extensions.swift in Sources */,
 				AD379662203DCF96002A4C3B /* DayTitleView.swift in Sources */,
 				ADBEA19520371F9C00E93E6C /* Mentor.swift in Sources */,
 				AD7ED5AA203C937E00DD2972 /* CustomFocusEffectCoordinator.swift in Sources */,

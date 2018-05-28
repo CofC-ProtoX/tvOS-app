@@ -10,15 +10,15 @@ import UIKit
 
 class MainViewController: UIViewController {
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.addSubview(VerticalMenuView(frame: CGRect(x: 0, y: 0, width: view.frame.width / 4, height: view.frame.height), inset: 30))
+        let menuWidth = view.frame.width / 4
+        let menuHeight = view.frame.height
+        view.addSubview(VerticalMenuView(frame: CGRect(x: 0, y: 0, width: menuWidth, height: menuHeight), inset: 30))
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        
     }
 }
 
